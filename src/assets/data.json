@@ -1,0 +1,45 @@
+{
+    "inventoryData": [
+        {
+            "value": 40,
+            "heading": "Laptops"
+        }, 
+
+        {
+            "value": 50,
+            "heading": "Shoes"
+        }, 
+        {
+            "value": 70,
+            "heading": "Camera"
+        }, 
+        {
+            "value": 88,
+            "heading": "Jeans"
+        }
+    ],
+
+    "transaction":[
+        {
+            "id":"fsdffs",
+            "amount": 4000,
+            "quantity":4,
+            "discount": 300,
+            "status":"Processing"
+        },
+        {
+            "id":"dfsdf",
+            "amount": 2000,
+            "quantity":4,
+            "discount": 300,
+            "status":"Processing"
+        },
+        {
+            "id":"fseefs",
+            "amount": 5000,
+            "quantity":4,
+            "discount": 300,
+            "status":"Processing"
+        }
+    ]
+}

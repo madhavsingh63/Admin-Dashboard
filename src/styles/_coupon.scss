@@ -1,0 +1,81 @@
+.couponContainer {
+  background-color: white;
+  padding: 2rem;
+  overflow-y: auto;
+  height: 100vh;
+  width: 100%;
+
+  > section {
+    height: 90%;
+    @include flex(column, center, center, 4rem);
+
+    > form {
+      width: 100%;
+      max-width: 30rem;
+      @include grid(2fr 1fr, unset, 2rem);
+      > input {
+        @include inputStyle(
+          100%,
+          1rem,
+          unset,
+          1px solid rgba(13, 13, 13, 0.196)
+        );
+        border-radius: 5px;
+      }
+
+      .checkboxContainer {
+        width: 100%;
+        @include flex(row);
+        border: 1px solid rgba(13, 13, 13, 0.196);
+        padding: 1.3rem;
+        border-radius: 5px;
+        grid-column: 1/3;
+        > label {
+          @include flex(row, unset, center, 5px);
+          font-weight: 300;
+          font-size: 13px;
+        }
+      }
+      > button {
+        all: unset;
+        padding: 1rem;
+        grid-column: 1/3;
+        background-color: rgb(5, 107, 224);
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+        width: -webkit-fill-available;
+        text-align: center;
+        border-radius: 5px;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    > code {
+      position: relative;
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      cursor: pointer;
+
+      > span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include flex(row, center, center, 0);
+        background-color: #000;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        opacity: 0;
+        &:hover {
+          opacity: 100;
+        }
+      }
+    }
+  }
+}
