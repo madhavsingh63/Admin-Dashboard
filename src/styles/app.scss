@@ -1,9 +1,14 @@
-@import "mixin";
-@import "dashboard";
-@import "products";
-@import "chart";
-@import "coupon";
-@import "mediaquery";
+@import "adminStyles/mixin";
+@import "home";
+@import "cart";
+@import "shipping";
+@import "login";
+@import "search";
+@import "adminStyles/dashboard";
+@import "adminStyles/products";
+@import "adminStyles/chart";
+@import "adminStyles/coupon";
+@import "adminStyles/mediaquery";
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -17,10 +22,18 @@
   box-sizing: border-box;
 }
 
+body {
+  user-select: none;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
+
+$color1: white;
+$color2: rgb(46, 46, 46);
+$color3: rgb(0, 104, 136);
 
 .red {
   color: red;
@@ -56,6 +69,60 @@ a {
   100% {
     box-shadow: 20px 0 #0002, -20px 0 #000;
     background: #000;
+  }
+}
+.navbar {
+  width: 100%;
+  @include flex(row, space-between, center, 1.2rem);
+  padding: 1rem 5%;
+  > a {
+    color: $color2;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    &:hover {
+      color: $color3;
+    }
+  }
+
+  > div {
+    position: relative;
+    @include flex(row, unset, center, 1.4rem);
+    > a {
+      color: $color2;
+      letter-spacing: 2px;
+      font-size: 1.2rem;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color3;
+      }
+    }
+    > div {
+      > button {
+        all: unset;
+        font-size: 1.2rem;
+        cursor: pointer;
+        background-color: transparent;
+        transition: all 0.3s;
+        &:hover {
+          color: $color3;
+        }
+      }
+
+      > dialog {
+        width: 100px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        position: absolute;
+        left: 37px;
+        top: 35px;
+        > div {
+          @include flex(column, unset, center, 0.25rem);
+        }
+      }
+    }
   }
 }
 

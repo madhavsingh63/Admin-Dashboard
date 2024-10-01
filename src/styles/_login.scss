@@ -1,0 +1,63 @@
+.login {
+  width: 100%;
+  padding-top: 5rem;
+  @include flex;
+
+  > main {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #fff;
+    @include baseShadow;
+    > h1 {
+      @include heading(2px);
+    }
+    > div {
+      margin-top: 2rem;
+      > label {
+        font-size: 1.1rem;
+      }
+      @include flex(column, unset, unset, 0.5rem);
+      > input {
+        @include inputStyle(
+          100%,
+          1rem,
+          inherit,
+          1px solid rgba(162, 162, 162, 0.53)
+        );
+        border-radius: 5px;
+      }
+      > p {
+        text-align: center;
+        margin: 0 2rem 1rem 2rem;
+      }
+      > button {
+        all: unset;
+        width: 100%;
+        background-color: rgb(62, 125, 242);
+        color: #fff;
+        padding: 0.75rem 0;
+        border: 1px solid rgb(62, 125, 242);
+        text-transform: uppercase;
+        cursor: pointer;
+        @include flex;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        font-size: 1.05rem;
+        &:hover {
+          opacity: 0.8;
+        }
+
+        > svg {
+          background-color: #fff;
+          @include square(2rem);
+          padding: 0.25rem;
+          border-radius: 5px;
+        }
+        > span {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

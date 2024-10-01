@@ -1,11 +1,11 @@
 import { BsSearch } from "react-icons/bs";
-import AdminSidebar from "../components/AdminSidebar";
+import AdminSidebar from "../../components/AdminSidebar";
 import { FaRegBell, FaUser } from "react-icons/fa";
 import { HiTrendingDown, HiTrendingUp } from "react-icons/hi";
-import data from "../assets/data.json";
-import { BarChart, DoughnutChart } from "../components/Charts";
+import data from "../../assets/data.json";
+import { BarChart, DoughnutChart } from "../../components/Charts";
 import { BiMaleFemale } from "react-icons/bi";
-import Table from "../components/DashboardTable";
+import Table from "../../components/DashboardTable";
 
 const Dashboard = () => {
   return (
@@ -74,7 +74,7 @@ const Dashboard = () => {
           </div>
         </section>
 
-        <section className="transactionContainer">
+        <section className="dashboardTransactionContainer">
           <div className="genderChart">
             <h2>Gender Ratio</h2>
             <DoughnutChart

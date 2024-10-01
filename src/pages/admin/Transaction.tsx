@@ -1,8 +1,8 @@
 import { ReactElement, useCallback, useState } from "react";
-import AdminSidebar from "../components/AdminSidebar";
+import AdminSidebar from "../../components/AdminSidebar";
 import { Column } from "react-table";
 import { Link } from "react-router-dom";
-import TableHOC from "../components/TableHOC";
+import TableHOC from "../../components/TableHOC";
 
 interface DataType {
   user: string;

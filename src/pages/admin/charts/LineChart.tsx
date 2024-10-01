@@ -1,5 +1,5 @@
-import AdminSidebar from "../../components/AdminSidebar";
-import { LineCharts } from "../../components/Charts";
+import AdminSidebar from "../../../components/AdminSidebar";
+import { LineCharts } from "../../../components/Charts";
 
 const LineChart = () => {
   return (

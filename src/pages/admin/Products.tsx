@@ -1,6 +1,6 @@
 import { ReactElement, useCallback, useState } from "react";
-import AdminSidebar from "../components/AdminSidebar";
-import TableHOC from "../components/TableHOC";
+import AdminSidebar from "../../components/AdminSidebar";
+import TableHOC from "../../components/TableHOC";
 import { Column } from "react-table";
 import { Link } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
@@ -46,14 +46,14 @@ const arr: DataType[] = [
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 4,
-    action: <Link to="/admin/product/jdjoi">Manage</Link>,
+    action: <Link to="/admin/products/jdjoi">Manage</Link>,
   },
   {
     photo: <img src={img2} alt="Laptop" />,
     name: "MacBook",
     price: 150000,
     stock: 20,
-    action: <Link to="/admin/product/ajsikwd">Manage</Link>,
+    action: <Link to="/admin/products/ajsikwd">Manage</Link>,
   },
   {
     photo: <img src={img} alt="Shoes" />,
@@ -67,35 +67,35 @@ const arr: DataType[] = [
     name: "MacBook",
     price: 150000,
     stock: 20,
-    action: <Link to="/admin/product/ajsikrd">Manage</Link>,
+    action: <Link to="/admin/products/ajsikrd">Manage</Link>,
   },
   {
     photo: <img src={img} alt="Shoes" />,
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 4,
-    action: <Link to="/admin/product/ajsskjd">Manage</Link>,
+    action: <Link to="/admin/products/ajsskjd">Manage</Link>,
   },
   {
     photo: <img src={img2} alt="Laptop" />,
     name: "MacBook",
     price: 150000,
     stock: 20,
-    action: <Link to="/admin/product/ajsdkjd">Manage</Link>,
+    action: <Link to="/admin/products/ajsdkjd">Manage</Link>,
   },
   {
     photo: <img src={img} alt="Shoes" />,
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 4,
-    action: <Link to="/admin/product/adsikjd">Manage</Link>,
+    action: <Link to="/admin/products/adsikjd">Manage</Link>,
   },
   {
     photo: <img src={img2} alt="Laptop" />,
     name: "MacBook",
     price: 150000,
     stock: 20,
-    action: <Link to="/admin/product/sjsikjd">Manage</Link>,
+    action: <Link to="/admin/products/sjsikjd">Manage</Link>,
   },
 ];
 
@@ -112,7 +112,7 @@ const Products = () => {
       <AdminSidebar />
       {/* Main */}
       <main>{Table()}</main>
-      <Link to="/admin/product/new" className="createProductBtn">
+      <Link to="/admin/products/new" className="createProductBtn">
         <FaPlus />
       </Link>
     </div>

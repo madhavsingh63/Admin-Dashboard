@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import AdminSidebar from "../components/AdminSidebar";
+import AdminSidebar from "../../components/AdminSidebar";
 
 const Products = () => {
   const [inputText, setInputText] = useState<string>("");
